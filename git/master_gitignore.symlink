@@ -1,3 +1,10 @@
+# Mac
 .DS_Store
+
+# Editors
 *.swp
 .vscode/*
+*.code-workspace
+
+# Dependency directories
+node_modules
