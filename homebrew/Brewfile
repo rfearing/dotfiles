@@ -65,6 +65,7 @@ cask "freedom"
 cask "yt-dlp"
 cask "notion"
 cask "fig"
+cask "xbar"
 
 # Github actions cannot install these.
 unless ENV.has_key?('CI') then
