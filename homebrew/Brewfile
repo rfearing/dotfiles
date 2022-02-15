@@ -1,0 +1,77 @@
+cask_args appdir: '/Applications'
+
+# Taps
+tap "heroku/brew"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
+tap "homebrew/services"
+tap "sass/sass"
+tap "dart-lang/dart"
+tap "thoughtbot/formulae"
+tap "teamookla/speedtest"
+
+# Brews
+brew "openssl"
+brew "python"
+brew "circleci"
+brew "composer"
+brew "docker-compose", link: false
+brew "fzf"
+brew "git"
+brew "git-secrets"
+brew "gnupg", link: false
+brew "httpd"
+brew "hub"
+brew "imagemagick"
+brew "mkcert"
+brew "mpv"
+brew "mysql-client", link: true
+brew "mysql", restart_service: true
+brew "node"
+brew "php", restart_service: true
+brew "php@7.2"
+brew "postgresql"
+brew "redis"
+brew "shellcheck"
+brew "tmux"
+brew "vim"
+brew "watchman"
+brew "yarn"
+brew "zsh"
+brew "heroku/brew/heroku"
+brew "sass/sass/sass"
+# brew "mas"
+brew "gcc"
+brew "nvm"
+brew "youtube-dl"
+
+# Casks
+# Tools that you can download via Homebrew but Homebrew doesn’t support them officially
+cask "switchhosts"
+cask "karabiner-elements"
+cask "visual-studio-code"
+cask "1password"
+cask "setapp"
+cask "alfred"
+cask "slack"
+cask "zoom"
+cask "spotify"
+cask "iterm2"
+cask "google-chrome"
+cask "firefox"
+cask "docker"
+cask "freedom"
+cask "yt-dlp"
+cask "notion"
+cask "fig"
+
+# Github actions cannot install these.
+unless ENV.has_key?('CI') then
+    brew "mas"
+		# App Store
+		mas 1476964367 # InYourFace
+		mas 497799835  # Xcode
+		mas 441258766  # Magnet
+		mas 595191960  # CopyClip
+end

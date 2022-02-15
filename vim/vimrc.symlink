@@ -1,4 +1,48 @@
-syntax on
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
-" Wrap gitcommit file types at the appropriate length
-filetype indent plugin on
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" 1. Add git handle
+" 2. Run :PluginInstall
+" 3. To update run: :PluginUpdate
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'git://git.wincent.com/command-t.git'
+Plugin 'shawncplus/phpcomplete.vim'
+Plugin 'dsawardekar/wordpress.vim'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
+Plugin 'w0rp/ale'
+" Plugin 'file:///home/gmarik/path/to/plugin'
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+Plugin 'Yggdroot/indentLine'
+Plugin 'scrooloose/nerdtree'
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+" *******************
+" START CUSTOM CONFIG
+" *******************
+syntax enable
+colorscheme monokai
+
+" Basics
+set tabstop=2
+set mouse=a
+set autoindent
+set backspace=indent,eol,start "backspace work like expected insert mode
+set number " Need those line numbers yo
+let g:indentLine_enabled = 1
+
+"
+" Mappings
+"
+
+" nnoremap = normal mode
+" inoremap = insert mode
+" vnoremap = visual mode
+" cnoremap = command (colon) mode
+let mapleader = "\<Space>"
+nnoremap <leader>ne :NERDTreeToggle<cr>
+let g:jsx_ext_required = 0
