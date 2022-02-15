@@ -1,0 +1,1 @@
+I don't know of an automated way to add these settings. Just import them to switchhosts if you want to start with some nice Ad-blocker lists.
