@@ -16,6 +16,10 @@ alias gitout="git clean -fd" # remove untracked files + directories
 # Delete all remote tracking Git branches where the upstream branch has been deleted
 alias git_prune="git fetch --prune && git branch -vv | grep 'origin/.*: gone]' | awk '{print \$1}' | xargs git branch -d"
 
+# Snagged from OhMyZsh Git Plugin:
+alias gpsup="git push --set-upstream origin $(git_current_branch)"
+
+
 # Adding CircleCI alias here, as opposed to making a circleCI director:
 
 # Run CircleCI on current branch

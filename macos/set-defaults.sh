@@ -87,7 +87,7 @@ defaults write com.apple.dock autohide-time-modifier -float 0.25
 defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 
 # Disable the warning before emptying the Trash
-defaults write com.apple.finder WarnOnEmptyTrash -bool false
+# defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
 # show full extension to avoid tricky.jpg.app
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
