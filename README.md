@@ -1,8 +1,6 @@
 # Dotfiles.
 
-Bootstrapped from [holman/dotfiles](https://github.com/holman/dotfiles) with extra inspiration from:
-- https://github.com/sparkbox/laptop/blob/master/mac
-- https://github.com/asimpson/dotfiles
+Bootstrapped from [holman/dotfiles][holman] with extra inspiration from the [Sparkbox laptop script][sb-script]
 
 ## Topical
 
@@ -31,7 +29,7 @@ There's a few special files in the hierarchy.
   but still keep those autoloaded files in your home directory. These get
   symlinked in when you run `script/bootstrap`.
 
-## install
+## Install
 
 Run this:
 
@@ -53,5 +51,10 @@ time to time to keep your environment fresh and up-to-date. You can find
 this script in `bin/`.
 
 <!--
+TODO
 https://tomforb.es/testing-my-dotfiles-with-github-actions/
 -->
+
+<!-- LINKS -->
+[holman]:https://github.com/holman/dotfiles
+[sb-script]:https://github.com/sparkbox/laptop/blob/master/mac
