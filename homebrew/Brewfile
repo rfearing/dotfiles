@@ -45,6 +45,7 @@ brew "sass/sass/sass"
 brew "gcc"
 brew "nvm"
 brew "youtube-dl"
+brew "switchaudio-osx"
 
 # Casks
 # Tools that you can download via Homebrew but Homebrew doesn’t support them officially
