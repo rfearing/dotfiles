@@ -52,11 +52,20 @@ function squashon () {
   fi
 }
 
-# Delete branches that have X
-# TODO: List branches first then prompt before deleting
+# Delete branches that have X in their name
 # $1 = text to look into branch names
+# e.g. search_and_delete temp
 function search_and_delete() {
-	git branch | grep "$1" | xargs git branch -D
+  git branch | grep "$1"
+  echo
+  if read -q "choice?Delete the above branch(es)?, Press Y/y to continue.: "; then
+    echo &&
+    git branch | grep "$1" | xargs git branch -D
+    echo
+	else
+    echo
+    echo 'Abandoning: Search & Delete'
+  fi
 }
 
 # Fast Forward.
