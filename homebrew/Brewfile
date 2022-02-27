@@ -67,6 +67,7 @@ cask "yt-dlp"
 cask "notion"
 cask "fig"
 cask "xbar"
+cask "dropbox-capture"
 
 # Github actions cannot install these.
 unless ENV.has_key?('CI') then
