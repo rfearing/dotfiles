@@ -12,4 +12,7 @@ Maybe I'll figure out how to automate these later, but just keeping track of the
 		- Malware Domain List
 		- YouTube Ads
 
-_Maybe I'll make a piehole one day_
+### [Keyboard Shortcuts][shortcuts]:
+- App Shortcuts ➡ All Applications ➡ "Start Screen Save" = `shift + command + down`
+
+[shortcuts]:https://github.com/tbalthazar-archives/dotfiles-mac

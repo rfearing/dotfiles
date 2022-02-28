@@ -46,6 +46,8 @@ brew "gcc"
 brew "nvm"
 brew "youtube-dl"
 brew "switchaudio-osx"
+brew "rbenv"
+brew "ruby-build"
 
 # Casks
 # Tools that you can download via Homebrew but Homebrew doesn’t support them officially
