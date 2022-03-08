@@ -50,6 +50,9 @@ defaults, and so on. Tweak this script, and occasionally run `dot` from
 time to time to keep your environment fresh and up-to-date. You can find
 this script in `bin/`.
 
+### Manual Setup Steps:
+Not everything can be automated. Run these [manual setup steps](manual/README.md):
+
 <!--
 TODO
 https://tomforb.es/testing-my-dotfiles-with-github-actions/
