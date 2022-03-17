@@ -3,9 +3,6 @@
   path = ~/.gitconfig.local
 # [secrets]
 # 	providers = /Users/ricardo/Projects/Sparkbox/secrets/provider.js
-[user]
-	email = 9965014+rfearing@users.noreply.github.com
-	name = Ricardo Fearing
 [commit]
 	gpgsign = true
 	template = ~/.gitmessage
@@ -14,7 +11,7 @@
 [github]
 	user = rfearing
 [init]
-	templateDir = ~/.git-template
+#	templateDir = ~/.git-template
 	defaultBranch = main
 [color]
 	diff = auto
