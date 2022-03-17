@@ -16,6 +16,9 @@ defaults write com.apple.Finder FXPreferredViewStyle Nlsv
 # Show the ~/Library folder.
 chflags nohidden ~/Library
 
+# Show dotfiles
+defaults write com.apple.Finder AppleShowAllFiles true
+
 # Set sidebar icon size to medium
 defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 2
 
@@ -52,6 +55,10 @@ defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 
 # Prevent Time Machine from prompting to use new hard drives as backup volume
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
+
+# Keep desktop clean by putting screenshots in a screenshots folder
+mkdir ~/Documents/screenshots
+defaults write com.apple.screencapture ~/Documents/screenshots
 
 ###############################################################################
 # Mac App Store                                                               #
