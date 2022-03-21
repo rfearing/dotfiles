@@ -25,9 +25,6 @@ defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 2
 # Set the icon size of Dock items to 36 pixels
 # defaults write com.apple.dock tilesize -int 36
 
-# Disable transparency in the menu bar and elsewhere on Yosemite
-defaults write com.apple.universalaccess reduceTransparency -bool true
-
 # Disable focus ring animation
 defaults write NSGlobalDomain NSUseAnimatedFocusRing -bool false
 
@@ -57,8 +54,8 @@ defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 
 # Keep desktop clean by putting screenshots in a screenshots folder
-mkdir ~/Documents/screenshots
-defaults write com.apple.screencapture ~/Documents/screenshots
+mkdir -p ~/Documents/Screenshots
+defaults write com.apple.screencapture location ~/Documents/Screenshots
 
 ###############################################################################
 # Mac App Store                                                               #
@@ -81,8 +78,6 @@ defaults write com.apple.SoftwareUpdate ConfigDataInstall -int 1
 
 # Turn on app auto-update
 defaults write com.apple.commerce AutoUpdate -bool true
-
-# Allow the App Store to reboot machine on macOS updates
 
 # Remove the auto-hiding Dock delay
 defaults write com.apple.Dock autohide-delay -float 0
