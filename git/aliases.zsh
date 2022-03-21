@@ -15,9 +15,7 @@ alias unstage="git reset --soft HEAD~1"
 alias gitout="git clean -fd" # remove untracked files + directories
 # Delete all remote tracking Git branches where the upstream branch has been deleted
 alias git_prune="git fetch --prune && git branch -vv | grep 'origin/.*: gone]' | awk '{print \$1}' | xargs git branch -d"
-
-# Snagged from OhMyZsh Git Plugin:
-alias gpsup="git push --set-upstream origin $(git_current_branch)"
+alias gpsup="git config --global push.default current"
 
 
 # Adding CircleCI alias here, as opposed to making a circleCI director:
@@ -28,3 +26,6 @@ function localci() {
 	circleci config process .circleci/config.yml > process.yml &&
 	circleci local execute -c process.yml --job $1
 }
+
+# So we can verify our commits
+export GPG_TTY=$(tty)

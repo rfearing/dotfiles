@@ -31,7 +31,8 @@ There's a few special files in the hierarchy.
 - **manual** - Things I haven't automated yet
 ## Install
 
-If you don't have xcode installed, install it with `xcode-select --install`
+If you haven't yet:
+- [Set up SSH keys](ssh/README.md)
 
 Run this:
 

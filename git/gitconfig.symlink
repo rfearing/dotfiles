@@ -1,15 +1,9 @@
 # Local/private config goes in the include
 [include]
   path = ~/.gitconfig.local
-# [secrets]
-# 	providers = /Users/ricardo/Projects/Sparkbox/secrets/provider.js
 [commit]
 	gpgsign = true
 	template = ~/.gitmessage
-# [include]
-#		path = ~/.gitconfig.local
-[github]
-	user = rfearing
 [init]
 #	templateDir = ~/.git-template
 	defaultBranch = main
