@@ -15,24 +15,21 @@ tap "teamookla/speedtest"
 
 # Brews
 brew "openssl"
-brew "python"
 brew "circleci"
 brew "composer"
-brew "docker-compose", link: false
+brew "docker-compose"
 brew "fzf"
 brew "git"
 brew "git-secrets"
-brew "gnupg", link: false
+brew "gnupg"
 brew "httpd"
 brew "hub"
 brew "imagemagick"
 brew "mkcert"
 brew "mpv"
-brew "mysql-client", link: true
-brew "mysql", restart_service: true
+brew "mysql-client"
 brew "node"
 brew "php", restart_service: true
-brew "php@7.2"
 brew "postgresql"
 brew "redis"
 brew "shellcheck"
@@ -44,7 +41,7 @@ brew "zsh"
 brew "heroku/brew/heroku"
 brew "sass/sass/sass"
 brew "gcc"
-brew "nvm"
+# brew "nvm" => install using zsh-nvm plugin
 brew "youtube-dl"
 brew "switchaudio-osx"
 brew "rbenv"
@@ -72,6 +69,7 @@ cask "notion"
 cask "fig"
 cask "xbar"
 cask "dropbox-capture"
+cask "brave-browser"
 
 # Github actions cannot install these.
 unless ENV.has_key?('CI') then
