@@ -5,23 +5,39 @@ Verified commits are changes to a git repository that have been cryptographicall
 
 Generate signing keys using [GPG Keychain][gh-gpg] and a password manager to generate a strong passphrase.
 
-**Adding Your Public Key to Github**
-
-Once you have generated your keys copy the public key and add it to your [Github account keys][github-account-keys] just like you would a new SSH key.
-
 **Adding Your Signing Key**
 
-In the GPG Keychain app, highlight the line identifying your keys, and click `Details` at the top-right of the window.
+Run: 
 
-Copy the `Key ID` near the middle of that new window to your clipboard and assign it to your global github user, replacing `keyid` with the value you copied from GPG Keychain:
+    $ gpg --list-secret-keys --keyid-format=long
 
-    $ git config --global user.signingkey keyid
+Copy the long form of the GPG key ID:
 
-Then, run:
+*In this example, the GPG key ID is `3AA5C34371567BD2`:*
+
+```
+sec   4096R/3AA5C34371567BD2 2016-03-10 [expires: 2017-03-10]
+```
+
+and add it to your `git/gitconfig.local.symlink` file as `signingkey`
+
+Then:
 
     $ git config --global commit.gpgsign true
 
 Make a new commit and a window will popup asking you to enter your GPG passphrase. Before clicking `OK` check the box next to `Save in Keychain`. This will save your passphrase securely to your macOS profile and you will never need to enter your passphrase again.
+
+**Adding Your Public Key to Github**
+
+Once you have generated your keys copy the public key and add it to your [Github account keys][github-account-keys] just like you would a new SSH key.
+
+Run
+
+    $ gpg --armor --export your-key-id
+
+Copy your GPG key, beginning with `-----BEGIN PGP PUBLIC KEY BLOCK-----` and ending with `-----END PGP PUBLIC KEY BLOCK-----`.
+
+Add the GPG key to your GitHub account, under settings > SSH & GPG Keys
 
 **Expired Keys**
 

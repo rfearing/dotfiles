@@ -4,9 +4,11 @@ Right after writing this, I read an article sent by [pointer.io][pointer]. That 
 
 Generate a new key using the `ssh-keygen` command:
 
-    $ ssh-keygen -t rsa -b 4096
+    $ ssh-keygen -t ed25519 -C "your_email@example.com"
 
 Typically, use the defaults as they work well with a majority of use cases.
+
+Copy the output of `cat ~/.ssh/id_ed25519.pub` and put in into your GitHub SSH settings.
 
 ## Using an SSH config file / Creating Identity Files
 

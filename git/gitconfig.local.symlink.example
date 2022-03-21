@@ -2,5 +2,7 @@
         name = AUTHORNAME
         email = AUTHOREMAIL
 	signingkey = GPG-KEY-ID
+[github]
+	user = github-handle
 [credential]
         helper = GIT_CREDENTIAL_HELPER
