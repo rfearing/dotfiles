@@ -1,6 +1,9 @@
+# https://arjanvandergaag.nl/blog/customize-zsh-prompt-with-vcs-info.html
+# https://www.themoderncoder.com/add-git-branch-information-to-your-zsh-prompt/
+
 autoload colors && colors
-# cheers, @ehrenmurdick
-# http://github.com/ehrenmurdick/config/blob/master/zsh/prompt.zsh
+# Load version control information
+autoload -Uz vcs_info
 
 if (( $+commands[git] ))
 then
@@ -20,17 +23,17 @@ git_dirty() {
   else
     if [[ $($git status --porcelain) == "" ]]
     then
-      echo "on %{$fg_bold[green]%}$(git_prompt_info)%{$reset_color%}"
+      echo "git(%{$fg_bold[green]%}$(git_prompt_info)%{$reset_color%})"
     else
-      echo "on %{$fg_bold[red]%}$(git_prompt_info)%{$reset_color%}"
+      echo "git(%{$fg_bold[red]%}$(git_prompt_info)%{$reset_color%})"
     fi
   fi
 }
 
+
 git_prompt_info () {
- ref=$($git symbolic-ref HEAD 2>/dev/null) || return
-# echo "(%{\e[0;33m%}${ref#refs/heads/}%{\e[0m%})"
- echo "${ref#refs/heads/}"
+  ref=$($git symbolic-ref HEAD 2>/dev/null) || return
+  echo "${ref#refs/heads/}"
 }
 
 # This assumes that you always have an origin named `origin`, and that you only
@@ -43,15 +46,19 @@ need_push () {
 
     if [[ $number == 0 ]]
     then
-      echo " "
+      echo ""
     else
-      echo " with %{$fg_bold[magenta]%}$number unpushed%{$reset_color%}"
+      echo " %{$fg_bold[magenta]%}$number unpushed%{$reset_color%}"
     fi
   fi
 }
 
 directory_name() {
-  echo "%{$fg_bold[cyan]%}%1/%\/%{$reset_color%}"
+  echo "%{$fg[cyan]%}%1/%\/%{$reset_color%}"
+}
+
+relative_directory() {
+  echo "%{$fg[cyan]%}${PWD/#$HOME/~}%{$reset_color%}";
 }
 
 battery_status() {
@@ -66,12 +73,10 @@ battery_status() {
   fi
 }
 
-export PROMPT=$'%n in $(directory_name) $(git_dirty)$(need_push)› '
-set_prompt () {
-  export RPROMPT="%{$fg_bold[cyan]%}%{$reset_color%}"
-}
+setopt PROMPT_SUBST
+export PROMPT='$(relative_directory) $(git_dirty)$(need_push) '
 
 precmd() {
   title "zsh" "%m" "%55<...<%~"
-  set_prompt
+  vcs_info
 }
