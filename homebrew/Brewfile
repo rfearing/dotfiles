@@ -72,6 +72,7 @@ cask "dropbox-capture"
 cask "brave-browser"
 cask "gpg-suite-pinentry"
 cask "homebrew/cask-drivers/logitech-options"
+cask "imageoptim"
 
 # Github actions cannot install these.
 unless ENV.has_key?('CI') then
