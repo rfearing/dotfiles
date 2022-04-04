@@ -23,6 +23,8 @@ brew "git"
 brew "git-secrets"
 brew "gnupg"
 brew "httpd"
+brew "go"
+brew "gmailctl"
 brew "hub"
 brew "imagemagick"
 brew "mkcert"
@@ -73,6 +75,7 @@ cask "brave-browser"
 cask "gpg-suite-pinentry"
 cask "homebrew/cask-drivers/logitech-options"
 cask "imageoptim"
+cask "monitorcontrol"
 
 # Github actions cannot install these.
 unless ENV.has_key?('CI') then
