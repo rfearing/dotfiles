@@ -1,93 +1,8 @@
 {
-  "vim.hlsearch" : true,
-  "workbench.colorTheme" : "Monokai ST3",
-  "editor.fontFamily" : "Hack",
-  "vim.leader" : "<space>",
-  "snyk.yesWelcomeNotification" : false,
-  "editor.insertSpaces" : false,
   "vim.useCtrlKeys" : true,
-  "javascript.updateImportsOnFileMove.enabled" : "always",
-  "files.associations" : {
-    "*.html" : "html",
-    "*.symlink": "shellscript",
-    "*config.symlink": "ssh_config"
-  },
+  "vim.leader" : "<space>",
+  "editor.wordSeparators" : "\/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
   "editor.wordWrap" : "off",
-  "workbench.settings.useSplitJSON" : true,
-  "window.zoomLevel" : 1,
-  "editor.inlineSuggest.enabled" : true,
-  "editor.minimap.enabled" : false,
-  "vim.easymotion" : true,
-  "cSpell.userWords" : [
-    "Chiedo",
-    "Sparkbox",
-    "autoprefixer",
-    "circleci",
-    "endfor",
-    "flexbox",
-    "htaccess",
-    "mixins",
-    "subpackage",
-    "tabindex"
-  ],
-  "editor.tabSize" : 2,
-  "editor.accessibilitySupport" : "off",
-  "terminal.integrated.env.osx" : {
-    "FIG_NEW_SESSION": "1"
-  },
-  "workbench.settings.editor" : "json",
-  "vsintellicode.modify.editor.suggestSelection" : "automaticallyOverrodeDefaultValue",
-  "workbench.startupEditor" : "newUntitledFile",
-  "editor.codeActionsOnSave" : {
-    "source.fixAll" : true
-  },
-  "vim.insertModeKeyBindings" : [
-    {
-      "after" : [
-        "<Esc>"
-      ],
-      "before" : [
-        "j",
-        "j"
-      ]
-    }
-  ],
-  "vim.normalModeKeyBindingsNonRecursive" : [
-    {
-      "after" : [
-        "d",
-        "d"
-      ],
-      "before" : [
-        "<leader>",
-        "d"
-      ]
-    },
-    {
-      "commands" : [
-        ":nohl"
-      ],
-      "before" : [
-        "<C-n>"
-      ]
-    }
-  ],
-  "eslint.validate" : [
-    "typescript",
-    "typescriptreact"
-  ],
-  "editor.fontSize" : 14,
-  "typescript.updateImportsOnFileMove.enabled" : "always",
-  "vim.incsearch" : true,
-  "vim.handleKeys" : {
-    "<C-a>" : false,
-    "<C-f>" : false
-  },
-  "editor.lineNumbers" : "on",
-  "vim.useSystemClipboard" : true,
-  "explorer.confirmDelete" : false,
-  "editor.multiCursorModifier" : "ctrlCmd",
-  "editor.suggestSelection" : "first",
   "intelephense.stubs" : [
     "apache",
     "bcmath",
@@ -162,16 +77,103 @@
     "zlib",
     "wordpress"
   ],
+  "workbench.settings.openDefaultSettings" : true,
+  "cSpell.language": "en,es",
+  "cSpell.userWords" : [
+    "Chiedo",
+    "Sparkbox",
+    "autoprefixer",
+    "circleci",
+    "endfor",
+    "flexbox",
+    "htaccess",
+    "mixins",
+    "subpackage",
+    "tabindex"
+  ],
+  "workbench.colorTheme" : "Monokai ST3",
+  "explorer.confirmDelete" : false,
+  "workbench.settings.useSplitJSON" : true,
+  "editor.insertSpaces" : false,
+  "editor.inlineSuggest.enabled" : true,
+  "editor.suggestSelection" : "first",
+  "editor.codeActionsOnSave" : {
+    "source.fixAll" : true
+  },
+  "editor.cursorStyle" : "line",
+  "editor.accessibilitySupport" : "off",
+  "editor.multiCursorModifier" : "ctrlCmd",
+  "workbench.startupEditor" : "newUntitledFile",
+  "terminal.integrated.env.osx" : {
+    "FIG_NEW_SESSION": "1"
+  },
+  "editor.lineNumbers" : "on",
+  "workbench.settings.editor" : "json",
+  "vsintellicode.modify.editor.suggestSelection" : "automaticallyOverrodeDefaultValue",
+  "svg.preview.mode" : "svg",
+  "javascript.updateImportsOnFileMove.enabled" : "always",
+  "editor.fontSize" : 14,
+  "vim.useSystemClipboard" : true,
+  "vim.insertModeKeyBindings" : [
+    {
+      "after" : [
+        "<Esc>"
+      ],
+      "before" : [
+        "j",
+        "j"
+      ]
+    }
+  ],
+  "vim.hlsearch" : true,
+  "[html]" : {
+    "editor.defaultFormatter" : "esbenp.prettier-vscode"
+  },
+  "typescript.updateImportsOnFileMove.enabled" : "always",
+  "snyk.yesWelcomeNotification" : false,
+  "vim.handleKeys" : {
+    "<C-a>" : false,
+    "<C-f>" : false
+  },
+  "vim.incsearch" : true,
+  "editor.autoClosingBrackets" : "never",
   "files.trimTrailingWhitespace" : true,
-  "editor.wordSeparators" : "\/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+  "vim.easymotion" : true,
+  "files.associations" : {
+    "*.html" : "html",
+    "*.symlink" : "shellscript",
+    "*config.symlink" : "ssh_config"
+  },
+  "eslint.validate" : [
+    "typescript",
+    "typescriptreact"
+  ],
+  "editor.tabSize" : 2,
+  "window.zoomLevel" : 1,
   "files.exclude" : {
     "**\/.git" : false
   },
-  "editor.cursorStyle" : "line",
-  "editor.autoClosingBrackets" : "never",
-  "svg.preview.mode" : "svg",
-  "workbench.settings.openDefaultSettings": true,
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  "editor.fontFamily" : "Hack",
+  "vim.normalModeKeyBindingsNonRecursive" : [
+    {
+      "after" : [
+        "d",
+        "d"
+      ],
+      "before" : [
+        "<leader>",
+        "d"
+      ]
+    },
+    {
+      "commands" : [
+        ":nohl"
+      ],
+      "before" : [
+        "<C-n>"
+      ]
+    }
+  ],
+  "editor.minimap.enabled": false,
+  "git.autofetch": true
 }
