@@ -38,7 +38,14 @@ while test $# -gt 0; do
 	shift
 done
 
-export ZSH=$HOME/.dotfiles
+# shortcut to this dotfiles path is $ZSH
+if [ -d "/workspaces" ]
+then
+  export ZSH=/workspaces/.codespaces/.persistedshare/dotfiles
+else
+  export ZSH=$HOME/.dotfiles
+fi
+
 
 # Set macOS defaults
 $ZSH/macos/set-defaults.sh

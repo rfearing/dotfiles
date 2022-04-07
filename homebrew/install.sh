@@ -6,7 +6,7 @@
 # using Homebrew.
 
 # Check for Homebrew
-if test ! $(which brew)
+if test ! $(which brew) && test "$(uname)" = "Darwin"
 then
   echo "  Installing Homebrew for you."
 

@@ -6,10 +6,11 @@ set -e
 
 cd "$(dirname "$0")"/..
 
-# Run Homebrew through the Brewfile
-echo "› brew bundle"
-
-brew bundle --file ~/.dotfiles/homebrew/Brewfile
+# Run Homebrew through the Brewfile (exclude if not on a mac)
+if [[ $OSTYPE == 'darwin'* ]]; then
+	echo "› brew bundle"
+	brew bundle --file ~/.dotfiles/homebrew/Brewfile
+fi
 
 # find the installers and run them iteratively
 find . -name install.sh | while read installer ; do sh -c "${installer}" ; done

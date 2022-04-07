@@ -1,9 +1,15 @@
-# Fig pre block. Keep at the top of this file.
-export PATH="${PATH}:${HOME}/.local/bin"
-eval "$(fig init zsh pre)"
+if [[ $OSTYPE == 'darwin'* ]]; then
+  # Fig pre block. Keep at the top of this file.
+  eval "$(fig init zsh pre)"
+fi
 
 # shortcut to this dotfiles path is $ZSH
-export ZSH=$HOME/.dotfiles
+if [ -d "/workspaces" ]
+then
+  export ZSH=/workspaces/.codespaces/.persistedshare/dotfiles
+else
+  export ZSH=$HOME/.dotfiles
+fi
 
 # your project folder that we can `c [tab]` to
 export PROJECTS=~/Code
@@ -54,6 +60,7 @@ unset config_files
 # bindkey "^[[A" up-line-or-beginning-search # Up
 # bindkey "^[[B" down-line-or-beginning-search # Down
 
-# Fig post block. Keep at the bottom of this file.
-eval "$(fig init zsh post)"
-
+if [[ $OSTYPE == 'darwin'* ]]; then
+  # Fig post block. Keep at the bottom of this file.
+  eval "$(fig init zsh post)"
+fi

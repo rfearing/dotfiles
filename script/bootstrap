@@ -5,6 +5,16 @@
 cd "$(dirname "$0")/.."
 DOTFILES_ROOT=$(pwd -P)
 
+# shortcut to this dotfiles path is $ZSH
+if [ -d "/workspaces" ]
+then
+  IS_CODESPACE=true
+  ZSH=/workspaces/.codespaces/.persistedshare/dotfiles
+else
+  IS_CODESPACE=false
+  ZSH=$HOME/.dotfiles
+fi
+
 set -e
 
 echo ''
@@ -49,7 +59,6 @@ setup_gitconfig () {
   fi
 }
 
-
 link_file () {
   local src=$1 dst=$2
 
@@ -59,6 +68,7 @@ link_file () {
   if [ -f "$dst" -o -d "$dst" -o -L "$dst" ]
   then
 
+    # Force overwrite on each new codespace
     if [ "$overwrite_all" == "false" ] && [ "$backup_all" == "false" ] && [ "$skip_all" == "false" ]
     then
 
@@ -69,6 +79,9 @@ link_file () {
 
         skip=true;
 
+      elif [ "$IS_CODESPACE" == "true" ]
+      then
+        overwrite_all=true
       else
 
         user "File already exists: $dst ($(basename "$src")), what do you want to do?\n\
@@ -137,12 +150,17 @@ install_dotfiles () {
   done
 }
 
-setup_gitconfig
+#
+# Run Setups:
+#
+if test ! "$(git config user.email)"; then
+  setup_gitconfig
+fi
+
 install_dotfiles
 
-# If we're on a Mac, let's install and setup homebrew.
-if [ "$(uname -s)" == "Darwin" ]
-then
+# If we're on a Mac, let's install and setup homebrew (i.e. don't run on codespaces)
+if [[ $OSTYPE == 'darwin'* ]]; then
   info "installing dependencies"
   if source bin/dot | while read -r data; do info "$data"; done
   then
@@ -150,6 +168,10 @@ then
   else
     fail "error installing dependencies"
   fi
+else
+  # Install non-mac software
+  echo "› $ZSH/script/install"
+  $ZSH/script/install
 fi
 
 echo ''

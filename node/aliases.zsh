@@ -1,7 +1,16 @@
 # Local Application dev environments
 export NODE_ENV=development
+IS_NVM=$(echo ${NVM_DIR})
 
-source ~/.zsh-nvm/zsh-nvm.plugin.zsh
+# Codespaces loads nvm differently
+if [ -d "/workspaces" ]
+then
+  if [[ -z ${IS_NVM} ]]; then
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+  fi
+else
+  source ~/.zsh-nvm/zsh-nvm.plugin.zsh
+fi
 
 # Calling nvm use automatically in a directory with a .nvmrc file
 autoload -U add-zsh-hook

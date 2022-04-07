@@ -27,6 +27,11 @@ unsetopt share_history
 #   like: git comm-[tab]
 setopt complete_aliases
 
+if [ "$SHELL" != "$(which zsh)" ] && [ "$SHELL" != "/bin/zsh" ]
+then
+	sudo chsh -s $(which zsh)
+fi
+
 # TODO, Look into bindkey later and make your own.
 # bindkey '^[^[[D' backward-word
 # bindkey '^[^[[C' forward-word
