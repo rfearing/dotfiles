@@ -1,4 +1,4 @@
 .DS_Store
 git/gitconfig.local.symlink
-**/*.nocommit.*
+**/*.nocommit*
 homebrew/Brewfile.lock.json

@@ -5,7 +5,7 @@ alias gp='git push origin HEAD'
 
 # Remove `+` and `-` from start of diff lines; just rely upon color.
 alias gd='git diff --color | sed "s/^\([^-+ ]*\)[-+ ]/\\1/" | less -r'
-# Remove all brenches already merged in orgin. Note particularly helpful if you're used to mergin in the terminal
+# Remove all branches already merged in orgin. Note particularly helpful if you're used to mergin in the terminal
 alias git-clean='git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d'
 alias fp="git push --force-with-lease"
 alias pwb='git rev-parse --abbrev-ref HEAD' # prints the working branch
