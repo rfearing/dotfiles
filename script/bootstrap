@@ -142,8 +142,13 @@ install_dotfiles () {
   info 'installing dotfiles'
 
   local overwrite_all=false backup_all=false skip_all=false
+  local ignore_path='*.git*'
 
-  for src in $(find -H "$DOTFILES_ROOT" -maxdepth 2 -name '*.symlink' -not -path '*.git*')
+  if [ "$IS_CODESPACE" == "true" ]; then
+    ignore_path='*git*' # We want codespace to completely take care of git
+  fi
+
+  for src in $(find -H "$DOTFILES_ROOT" -maxdepth 2 -name '*.symlink' -not -path "$ignore_path")
   do
     dst="$HOME/.$(basename "${src%.*}")"
     link_file "$src" "$dst"
