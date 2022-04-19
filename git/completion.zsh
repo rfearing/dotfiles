@@ -3,9 +3,10 @@
 # tosses it, at least).
 if [[ $OSTYPE == 'darwin'* ]]; then
   completion='$(brew --prefix)/share/zsh/site-functions/_git'
+
+  if test -f $completion
+  then
+    source $completion
+  fi
 fi
 
-if test -f $completion
-then
-  source $completion
-fi
