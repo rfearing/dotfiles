@@ -50,7 +50,7 @@ brew "switchaudio-osx"
 brew "rbenv"
 brew "ruby-build"
 brew "git-lfs"
-# End Brew
+# End Brews
 
 # Casks
 # Tools that you can download via Homebrew but Homebrew doesn’t support them officially
@@ -79,6 +79,7 @@ cask "homebrew/cask-drivers/logitech-options"
 cask "imageoptim"
 cask "monitorcontrol"
 cask "obsidian"
+cask "todoist"
 # End Casks
 
 # Github actions cannot install these.
