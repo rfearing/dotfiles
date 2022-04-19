@@ -12,6 +12,7 @@ tap "sass/sass"
 tap "dart-lang/dart"
 tap "thoughtbot/formulae"
 tap "teamookla/speedtest"
+# End Taps
 
 # Brews
 brew "openssl"
@@ -48,6 +49,8 @@ brew "youtube-dl"
 brew "switchaudio-osx"
 brew "rbenv"
 brew "ruby-build"
+brew "git-lfs"
+# End Brew
 
 # Casks
 # Tools that you can download via Homebrew but Homebrew doesn’t support them officially
@@ -75,6 +78,8 @@ cask "gpg-suite-pinentry"
 cask "homebrew/cask-drivers/logitech-options"
 cask "imageoptim"
 cask "monitorcontrol"
+cask "obsidian"
+# End Casks
 
 # Github actions cannot install these.
 unless ENV.has_key?('CI') then
