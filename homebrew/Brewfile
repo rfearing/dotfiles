@@ -91,4 +91,5 @@ unless ENV.has_key?('CI') then
 		mas "Magnet", id: 441258766
 		mas "CopyClip", id: 595191960
 		mas "Red Lines Tools", id: 1469400117
+		mas "Good Notes 5", id: 1444383602
 end
