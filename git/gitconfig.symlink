@@ -21,7 +21,7 @@
 [pull]
 	ff = only
 [push]
-	default = matching
+	default = current
 [core]
 	excludesfile = ~/.master_gitignore
   editor = vim

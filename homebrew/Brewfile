@@ -82,6 +82,7 @@ cask "obsidian"
 cask "todoist"
 cask "postman"
 cask "google-chrome-canary"
+cask "signal"
 # End Casks
 
 # Github actions cannot install these.
