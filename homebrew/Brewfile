@@ -47,9 +47,9 @@ brew "gcc"
 # brew "nvm" => install using zsh-nvm plugin
 brew "youtube-dl"
 brew "switchaudio-osx"
-brew "rbenv"
-brew "ruby-build"
 brew "git-lfs"
+brew "chruby"
+brew "ruby-install"
 # End Brews
 
 # Casks

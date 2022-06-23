@@ -1,2 +1,5 @@
-# Load rbenv every time you open a terminal
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+# Load chruby every time you open a terminal
+
+source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
+source /opt/homebrew/opt/chruby/share/chruby/auto.sh
+chruby ruby-3.1.2
