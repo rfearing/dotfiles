@@ -1,6 +1,6 @@
 if [[ $OSTYPE == 'darwin'* ]]; then
   # Fig pre block. Keep at the top of this file.
-  . "$HOME/.fig/shell/zshrc.pre.zsh"
+  [[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && . "$HOME/.fig/shell/zshrc.pre.zsh"
 fi
 
 # shortcut to this dotfiles path is $ZSH
@@ -62,5 +62,5 @@ unset config_files
 
 if [[ $OSTYPE == 'darwin'* ]]; then
   # Fig post block. Keep at the bottom of this file.
-  . "$HOME/.fig/shell/zshrc.post.zsh"
+  [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && . "$HOME/.fig/shell/zshrc.post.zsh"
 fi
