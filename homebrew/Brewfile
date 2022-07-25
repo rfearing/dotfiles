@@ -12,6 +12,7 @@ tap "sass/sass"
 tap "dart-lang/dart"
 tap "thoughtbot/formulae"
 tap "teamookla/speedtest"
+tap "github/bootstrap"
 # End Taps
 
 # Brews
@@ -50,6 +51,7 @@ brew "switchaudio-osx"
 brew "git-lfs"
 brew "chruby"
 brew "ruby-install"
+brew "macos-vscode-codespaces"
 # End Brews
 
 # Casks
