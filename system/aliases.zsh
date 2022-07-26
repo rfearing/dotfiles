@@ -7,9 +7,14 @@ if [[ $OSTYPE == 'darwin'* ]]; then
     iterm2_set_user_var nodeVersion $(node -v)
   }
 
+  # Play Lofi Girl to focus
+  function lofi () {
+    mpv "https://www.youtube.com/watch?v=jfKfPfyJRdk" --vid=no
+  }
+
   # play yt in terminal with no video
   function listen () {
-    mpv $1 --no-video
+    mpv $1 --vid=no
   }
 
   # play yt in terminal with video
