@@ -2,6 +2,16 @@
 
 Maybe I'll figure out how to automate these later, but just keeping track of them in the same place at the current moment.
 
+### App Store
+
+Previously I used mas and Brewfile, but I'm opting to manually load these:
+ - In Your Face
+ - Xcode
+ - Magnet
+ - CopyClip
+ - Red Lines Tools"
+ - Hand Mirror"
+
 ### Alfred
 - Turn off Spotlight shortcut (System Preferences > Spotlight > Keyboard Shortcuts)
 - Update Alfred shortcut

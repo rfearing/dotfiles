@@ -1,5 +1,7 @@
 cask_args appdir: '/Applications'
 
+# * = Comes pre-installed on GitHub devices so re-installing causes errors
+
 # Taps
 tap "heroku/brew"
 tap "homebrew/bundle"
@@ -51,7 +53,6 @@ brew "switchaudio-osx"
 brew "git-lfs"
 brew "chruby"
 brew "ruby-install"
-brew "macos-vscode-codespaces"
 # End Brews
 
 # Casks
@@ -62,12 +63,12 @@ cask "visual-studio-code"
 cask "1password"
 cask "setapp"
 cask "alfred"
-cask "slack"
+# cask "slack" # *
 cask "zoom"
 cask "font-hack"
 cask "spotify"
 cask "iterm2"
-cask "google-chrome"
+# cask "google-chrome" # *
 cask "firefox"
 cask "docker"
 cask "freedom"
@@ -77,26 +78,12 @@ cask "xbar"
 cask "dropbox-capture"
 cask "brave-browser"
 cask "gpg-suite-pinentry"
-cask "homebrew/cask-drivers/logitech-options"
 cask "imageoptim"
 cask "monitorcontrol"
 cask "obsidian"
 cask "todoist"
 cask "postman"
-cask "google-chrome-canary"
 cask "signal"
 cask "steam"
 cask "anki"
 # End Casks
-
-# Github actions cannot install these.
-unless ENV.has_key?('CI') then
-    brew "mas"
-		# App Store
-		mas "InYourFace", id: 1476964367
-		mas "Xcode", id: 497799835
-		mas "Magnet", id: 441258766
-		mas "CopyClip", id: 595191960
-		mas "Red Lines Tools", id: 1469400117
-		mas "Hand Mirror", id: 1502839586
-end
