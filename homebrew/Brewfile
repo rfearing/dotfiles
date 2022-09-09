@@ -86,4 +86,5 @@ cask "postman"
 cask "signal"
 cask "steam"
 cask "anki"
+cask "microsoft-teams"
 # End Casks

@@ -1,0 +1,41 @@
+
+{
+  "title": "2.4 GH Mouse",
+  "rules": [
+    {
+      "description": "Don't use. Use Simple Modifiers Instead.",
+      "manipulators": [
+        {
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "product_id": 102,
+                  "vendor_id": 7847
+                }
+              ]
+            }
+          ],
+          "type": "basic",
+          "from": {
+            "key_code": "tab",
+            "modifiers": {
+              "optional": [
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "up_arrow",
+              "modifiers": [
+                "left_control"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
