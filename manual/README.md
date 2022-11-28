@@ -9,8 +9,9 @@ Previously I used mas and Brewfile, but I'm opting to manually load these:
  - Xcode
  - Magnet
  - CopyClip
- - Red Lines Tools"
- - Hand Mirror"
+ - Red Lines Tools
+ - Hand Mirror
+ - LittleIpsum
 
 ### Alfred
 - Turn off Spotlight shortcut (System Preferences > Spotlight > Keyboard Shortcuts)
