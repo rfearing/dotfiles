@@ -92,4 +92,5 @@ cask "browserosaurus"
 cask "boop"
 cask "keysmith"
 cask "textsniper"
+cask "meetingbar"
 # End Casks
