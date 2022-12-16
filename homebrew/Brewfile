@@ -15,6 +15,7 @@ tap "dart-lang/dart"
 tap "thoughtbot/formulae"
 tap "teamookla/speedtest"
 tap "github/bootstrap"
+tap "oven-sh/bun"
 # End Taps
 
 # Brews
@@ -53,6 +54,9 @@ brew "switchaudio-osx"
 brew "git-lfs"
 brew "chruby"
 brew "ruby-install"
+brew "go"
+brew "bun"
+brew "deno"
 # End Brews
 
 # Casks

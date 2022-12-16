@@ -12,6 +12,7 @@ Previously I used mas and Brewfile, but I'm opting to manually load these:
  - Red Lines Tools
  - Hand Mirror
  - LittleIpsum
+ - Tailscale
 
 ### Alfred
 - Turn off Spotlight shortcut (System Preferences > Spotlight > Keyboard Shortcuts)
