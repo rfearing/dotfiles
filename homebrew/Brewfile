@@ -57,6 +57,8 @@ brew "ruby-install"
 brew "go"
 brew "bun"
 brew "deno"
+brew "portaudio"
+brew "python@3.9"
 # End Brews
 
 # Casks
@@ -97,4 +99,5 @@ cask "boop"
 cask "keysmith"
 cask "textsniper"
 cask "meetingbar"
+cask "send-to-kindle"
 # End Casks

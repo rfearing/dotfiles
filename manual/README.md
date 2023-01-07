@@ -28,6 +28,13 @@ Previously I used mas and Brewfile, but I'm opting to manually load these:
 		- Malware Domain List
 		- YouTube Ads
 
+### Set Up Google Assistant Commands
+
+1. In the [Google API Manager][google-api], choose "Mac Terminal".
+2. Go to the Credentials tab and select "Google Assistant on Mac"
+3. Download Client Secret to `~/.dotfiles/google-assistant/.nocommit.client-secret.json`
+4. After running install, copy the Authorization code when asked and paste into the terminal.
+
 ### [Keyboard Shortcuts][shortcuts]:
 - App Shortcuts ➡ All Applications ➡ "Lock Screen" = `shift + command + down`
 
@@ -36,3 +43,11 @@ Previously I used mas and Brewfile, but I'm opting to manually load these:
 - and [set up ssh keys](../ssh/README.md)
 
 [shortcuts]:https://github.com/tbalthazar-archives/dotfiles-mac
+[google-project]:https://console.cloud.google.com/project
+[google-api]:https://console.cloud.google.com/apis/library
+[actions-console]:https://console.actions.google.com/
+
+<!--
+1. In the [Google Google Actions Console][actions-console], choose the "Mac Terminal" Project.
+2. Go to the Develop tab > Device Registration and select My MacBook.
+  -->

@@ -37,3 +37,12 @@ function findbyport() {
 
 # LS directory with some details
 alias list='pwd; ls -la'
+
+# Copy text from clipboard without new line:
+alias copy="pbpaste | sed 's/\.$/.|/g' | sed 's/^\s*$/|/g' | tr '\n' ' ' | tr '|' '\n' | pbcopy"
+# modified from https://superuser.com/a/796341
+#   - first sed command: replace end-of-line full stops with '|' delimiter and keep original periods.
+#   - second sed command: replace empty lines with same delimiter (e.g.
+#     to separate text headings from text)
+#   - subsequent tr commands: remove existing newlines; replace delimiter with
+#     newlines

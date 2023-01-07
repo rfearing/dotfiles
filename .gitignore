@@ -3,3 +3,5 @@ git/gitconfig.local.symlink
 **/*.nocommit*
 homebrew/Brewfile.lock.json
 macos/karabiner/automatic_backups
+.dot_env
+*/__pycache__
