@@ -28,13 +28,6 @@ Previously I used mas and Brewfile, but I'm opting to manually load these:
 		- Malware Domain List
 		- YouTube Ads
 
-### Set Up Google Assistant Commands
-
-1. In the [Google API Manager][google-api], choose "Mac Terminal".
-2. Go to the Credentials tab and select "Google Assistant on Mac"
-3. Download Client Secret to `~/.dotfiles/google-assistant/.nocommit.client-secret.json`
-4. After running install, copy the Authorization code when asked and paste into the terminal.
-
 ### [Keyboard Shortcuts][shortcuts]:
 - App Shortcuts ➡ All Applications ➡ "Lock Screen" = `shift + command + down`
 
@@ -48,6 +41,14 @@ Previously I used mas and Brewfile, but I'm opting to manually load these:
 [actions-console]:https://console.actions.google.com/
 
 <!--
-1. In the [Google Google Actions Console][actions-console], choose the "Mac Terminal" Project.
-2. Go to the Develop tab > Device Registration and select My MacBook.
-  -->
+I'm not confident enough in this yet and it seems likely to cause issues. If I were to try again, I'd want to install (with brew):
+- portaudio
+- python@3.9
+
+### Set Up Google Assistant Commands
+
+1. In the [Google API Manager][google-api], choose "Mac Terminal".
+2. Go to the Credentials tab and select "Google Assistant on Mac"
+3. Download Client Secret to `~/.dotfiles/google-assistant/.nocommit.client-secret.json`
+4. After running install, copy the Authorization code when asked and paste into the terminal.
+-->

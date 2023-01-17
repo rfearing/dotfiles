@@ -57,8 +57,6 @@ brew "ruby-install"
 brew "go"
 brew "bun"
 brew "deno"
-brew "portaudio"
-brew "python@3.9"
 # End Brews
 
 # Casks
@@ -100,4 +98,6 @@ cask "keysmith"
 cask "textsniper"
 cask "meetingbar"
 cask "send-to-kindle"
+cask "google-drive"
+cask "1password/tap/1password-cli"
 # End Casks
