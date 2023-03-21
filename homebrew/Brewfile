@@ -57,6 +57,7 @@ brew "ruby-install"
 brew "go"
 brew "bun"
 brew "deno"
+brew "gh"
 # End Brews
 
 # Casks
