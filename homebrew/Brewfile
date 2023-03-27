@@ -101,4 +101,5 @@ cask "meetingbar"
 cask "send-to-kindle"
 cask "google-drive"
 cask "1password/tap/1password-cli"
+cask "vivaldi"
 # End Casks
