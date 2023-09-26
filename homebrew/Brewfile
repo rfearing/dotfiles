@@ -58,6 +58,9 @@ brew "go"
 brew "bun"
 brew "deno"
 brew "gh"
+brew "graphviz"
+brew "vmware-fusion"
+brew "hey" # a tiny program that sends some load to a web application.
 # End Brews
 
 # Casks
