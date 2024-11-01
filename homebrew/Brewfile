@@ -1,7 +1,5 @@
 cask_args appdir: '/Applications'
 
-# * = Comes pre-installed on GitHub devices so re-installing causes errors
-
 # Taps
 tap "heroku/brew"
 tap "homebrew/bundle"
@@ -60,6 +58,8 @@ brew "deno"
 brew "gh"
 brew "vmware-fusion"
 brew "hey" # a tiny program that sends some load to a web application.
+brew "act"
+brew "font-monaspace"
 # End Brews
 
 # Casks
@@ -67,20 +67,14 @@ brew "hey" # a tiny program that sends some load to a web application.
 cask "switchhosts"
 cask "karabiner-elements"
 cask "visual-studio-code"
-cask "1password"
 cask "setapp"
 cask "alfred"
-# cask "slack" # *
-cask "zoom"
 cask "font-hack"
 cask "spotify"
 cask "iterm2"
-# cask "google-chrome" # *
-cask "firefox"
 cask "docker"
 cask "freedom"
 cask "notion"
-cask "fig"
 cask "xbar"
 cask "dropbox-capture"
 cask "brave-browser"
@@ -89,11 +83,9 @@ cask "imageoptim"
 cask "monitorcontrol"
 cask "obsidian"
 cask "todoist"
-cask "postman"
 cask "signal"
 cask "steam"
 cask "anki"
-cask "microsoft-teams"
 cask "keycastr"
 cask "browserosaurus"
 cask "boop"
@@ -104,4 +96,22 @@ cask "send-to-kindle"
 cask "google-drive"
 cask "1password/tap/1password-cli"
 cask "vivaldi"
+cask "vlc"
+cask "gimp"
+cask "kdenlive"
+cask "calibre"
+cask "virtualbox"
+cask "mamp"
 # End Casks
+
+#####
+## Apps that come pre-installed on GitHub devices (or via self-serve):
+# cask "1password" # *
+# cask "slack" # *
+# cask "zoom"  # *
+# cask "google-chrome" # *
+# cask "firefox" # *
+# cask "microsoft-teams" # *
+
+## no longer supported at GH:
+# cask "postman"
