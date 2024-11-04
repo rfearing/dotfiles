@@ -4,29 +4,31 @@ Maybe I'll figure out how to automate these later, but just keeping track of the
 
 ### App Store
 
-Previously I used mas and Brewfile, but I'm opting to manually load these:
- - In Your Face
- - Xcode
- - Magnet
+ - Chord ai
  - CopyClip
- - Red Lines Tools
+ - GumRoad
  - Hand Mirror
+ - In Your Face
+ - Kindle
  - LittleIpsum
+ - Magnet
+ - Red Lines Tools
  - Tailscale
+ - Xcode
 
 ### Alfred
 - Turn off Spotlight shortcut (System Preferences > Spotlight > Keyboard Shortcuts)
 - Update Alfred shortcut
 
 **Workflows:**
-- [Audio Switcher](https://github.com/beet/alfred_audio_switcher/releases)
+- 1Password
+- Calculate Anything
+- CoffeeCoffee
+- Remove newlines (upload workflow)
+- SynAnt
 
-### Switch Hosts
-- Ad Blockers:
-		- Ad Server List
-		- Someone Who Cares
-		- Malware Domain List
-		- YouTube Ads
+**Snippets:**
+- Small group emails
 
 ### [Keyboard Shortcuts][shortcuts]:
 - App Shortcuts ➡ All Applications ➡ "Lock Screen" = `shift + command + down`
@@ -41,9 +43,17 @@ Previously I used mas and Brewfile, but I'm opting to manually load these:
 [actions-console]:https://console.actions.google.com/
 
 <!--
-I'm not confident enough in this yet and it seems likely to cause issues. If I were to try again, I'd want to install (with brew):
-- portaudio
-- python@3.9
+## No longer using: Maybe will try again later:
+
+- Rambox
+- Reader
+
+### Switch Hosts
+- Ad Blockers:
+		- Ad Server List
+		- Someone Who Cares
+		- Malware Domain List
+		- YouTube Ads
 
 ### Set Up Google Assistant Commands
 
