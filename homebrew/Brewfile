@@ -4,114 +4,115 @@ cask_args appdir: '/Applications'
 tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
-tap "homebrew/cask-fonts"
-tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
-tap "sass/sass"
 tap "dart-lang/dart"
-tap "thoughtbot/formulae"
-tap "teamookla/speedtest"
 tap "github/bootstrap"
 tap "oven-sh/bun"
+tap "sass/sass"
+tap "teamookla/speedtest"
+tap "thoughtbot/formulae"
 # End Taps
 
 # Brews
-brew "openssl"
-brew "circleci"
+brew "act"
+brew "bun"
+brew "chruby"
 brew "composer"
+brew "deno"
 brew "docker-compose"
+brew "font-monaspace"
 brew "fzf"
-brew "git"
+brew "gcc"
+brew "gh"
+brew "git-lfs"
 brew "git-secrets"
-brew "gnupg"
-brew "httpd"
-brew "go"
+brew "git"
 brew "gmailctl"
+brew "gnupg"
+brew "go"
+brew "go"
+brew "hey" # tiny program to send some load to a web app
+brew "httpd"
 brew "hub"
 brew "imagemagick"
 brew "mkcert"
 brew "mpv"
 brew "mysql-client"
 brew "node"
+brew "openssl"
 brew "php", restart_service: true
 brew "postgresql"
 brew "redis"
+brew "ruby-install"
+brew "sass/sass/sass"
 brew "shellcheck"
 brew "tmux"
 brew "vim"
+brew "vmware-fusion"
 brew "watchman"
 brew "yarn"
-brew "zsh"
-brew "heroku/brew/heroku"
-brew "sass/sass/sass"
-brew "gcc"
-# brew "nvm" => install using zsh-nvm plugin
 brew "youtube-dl"
-brew "switchaudio-osx"
-brew "git-lfs"
-brew "chruby"
-brew "ruby-install"
-brew "go"
-brew "bun"
-brew "deno"
-brew "gh"
-brew "vmware-fusion"
-brew "hey" # a tiny program that sends some load to a web application.
-brew "act"
-brew "font-monaspace"
+brew "zsh"
 # End Brews
 
 # Casks
 # Tools that you can download via Homebrew but Homebrew doesn’t support them officially
-cask "switchhosts"
-cask "karabiner-elements"
-cask "visual-studio-code"
-cask "setapp"
+cask "1password/tap/1password-cli"
 cask "alfred"
-cask "font-hack"
-cask "spotify"
-cask "iterm2"
+cask "anki"
+cask "calibre"
 cask "docker"
+cask "font-hack"
 cask "freedom"
-cask "notion"
-cask "xbar"
-cask "dropbox-capture"
-cask "brave-browser"
+cask "gimp"
+cask "google-drive"
 cask "gpg-suite-pinentry"
 cask "imageoptim"
+cask "iterm2"
+cask "karabiner-elements"
+cask "kdenlive"
+cask "keycastr"
+cask "keysmith"
+cask "mamp"
+cask "meetingbar"
 cask "monitorcontrol"
 cask "obsidian"
-cask "todoist"
-cask "signal"
-cask "steam"
-cask "anki"
-cask "keycastr"
-cask "browserosaurus"
-cask "boop"
-cask "keysmith"
-cask "textsniper"
-cask "meetingbar"
 cask "send-to-kindle"
-cask "google-drive"
-cask "1password/tap/1password-cli"
-cask "vivaldi"
-cask "vlc"
-cask "gimp"
-cask "kdenlive"
-cask "calibre"
+cask "setapp"
+cask "signal"
+cask "spotify"
+cask "steam"
+cask "textsniper"
+cask "todoist"
 cask "virtualbox"
-cask "mamp"
+cask "visual-studio-code"
+cask "vlc"
 # End Casks
 
 #####
+
 ## Apps that come pre-installed on GitHub devices (or via self-serve):
-# cask "1password" # *
-# cask "slack" # *
-# cask "zoom"  # *
-# cask "google-chrome" # *
-# cask "firefox" # *
-# cask "microsoft-teams" # *
+# cask "1password
+# cask "firefox
+# cask "google-chrome
+# cask "microsoft-teams
+# cask "slack
+# cask "zoom"
 
 ## no longer supported at GH:
+# cask "notion"
 # cask "postman"
+
+## Apps that I no longer use, but maybe will revisit in the future:
+# brew "circleci"
+# brew "switchaudio-osx"
+# cask "brave-browser"
+# cask "browserosaurus"
+# cask "dropbox-capture"
+# cask "switchhosts"
+# cask "vivaldi"
+# cask "xbar"
+
+## Other:
+# brew "nvm" => install using zsh-nvm plugin
