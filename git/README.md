@@ -9,7 +9,7 @@ Generate signing keys using [GPG Keychain][gh-gpg] and a password manager to gen
 
 Run: 
 
-    $ gpg --list-secret-keys --keyid-format=long
+    gpg --list-secret-keys --keyid-format=long
 
 Copy the long form of the GPG key ID:
 
@@ -23,7 +23,7 @@ and add it to your `git/gitconfig.local.symlink` file as `signingkey`
 
 Then:
 
-    $ git config --global commit.gpgsign true
+    git config --global commit.gpgsign true
 
 Make a new commit and a window will popup asking you to enter your GPG passphrase. Before clicking `OK` check the box next to `Save in Keychain`. This will save your passphrase securely to your macOS profile and you will never need to enter your passphrase again.
 
