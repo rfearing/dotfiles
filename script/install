@@ -7,6 +7,7 @@ set -e
 cd "$(dirname "$0")"/..
 
 # Run Homebrew through the Brewfile (exclude if not on a mac)
+# Todo: Seperate Mac Specific apps into a seperate Brewfile so I can use this in Linux
 if [[ $OSTYPE == 'darwin'* ]]; then
 	echo "› brew bundle"
 	brew bundle --file ~/.dotfiles/homebrew/Brewfile

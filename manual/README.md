@@ -10,8 +10,8 @@ Maybe I'll figure out how to automate these later, but just keeping track of the
  - Hand Mirror
  - In Your Face
  - Kindle
- - LittleIpsum
  - Magnet
+ - NotePlan
  - Red Lines Tools
  - Tailscale
  - Xcode
