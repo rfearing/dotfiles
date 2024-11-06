@@ -38,6 +38,9 @@ Run this:
 
 ```sh
 git clone git@github.com:rfearing/dotfiles.git ~/.dotfiles
+```
+Then:
+```sh
 cd ~/.dotfiles
 script/bootstrap
 ```
@@ -52,6 +55,10 @@ which sets up a few paths that'll be different on your particular machine.
 defaults, and so on. Tweak this script, and occasionally run `dot` from
 time to time to keep your environment fresh and up-to-date. You can find
 this script in `bin/`.
+
+**Errors I ran into:**
+- If brew doesn't install try manually running `eval "$(/opt/homebrew/bin/brew shellenv)"`
+- You may need to run `script/install` if brew didn't install correctly (see above)
 
 ### Manual Setup Steps:
 Not everything can be automated. Run these [manual setup steps](manual/README.md):
