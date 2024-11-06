@@ -3,8 +3,6 @@ cask_args appdir: '/Applications'
 # Taps
 tap "heroku/brew"
 tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/core"
 tap "homebrew/services"
 tap "dart-lang/dart"
 tap "github/bootstrap"
@@ -16,7 +14,6 @@ tap "thoughtbot/formulae"
 
 # Brews
 brew "act"
-brew "bun"
 brew "chruby"
 brew "composer"
 brew "deno"
