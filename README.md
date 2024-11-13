@@ -65,7 +65,7 @@ Not everything can be automated. Run these [manual setup steps](manual/README.md
 
 <!--
 TODO
-https://tomforb.es/testing-my-dotfiles-with-github-actions/
+https://tomforb.es/blog/testing-my-dotfiles/
 -->
 
 <!-- LINKS -->
