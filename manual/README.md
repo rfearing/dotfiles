@@ -2,6 +2,10 @@
 
 Maybe I'll figure out how to automate these later, but just keeping track of them in the same place at the current moment.
 
+### Git & SSH
+- Make sure you [set up verified git commits](../git/README.md)
+- and [set up ssh keys](../ssh/README.md)
+
 ### App Store
 
  - Chord ai
@@ -32,10 +36,6 @@ Maybe I'll figure out how to automate these later, but just keeping track of the
 
 ### [Keyboard Shortcuts][shortcuts]:
 - App Shortcuts ➡ All Applications ➡ "Lock Screen" = `shift + command + down`
-
-### Git & SSH
-- Make sure you [set up verified git commits](../git/README.md)
-- and [set up ssh keys](../ssh/README.md)
 
 [shortcuts]:https://github.com/tbalthazar-archives/dotfiles-mac
 [google-project]:https://console.cloud.google.com/project
