@@ -1,6 +1,9 @@
 ## Verified Commits
 Verified commits are changes to a git repository that have been cryptographically signed by the committer. This should be done on any new machine. See Why [Verified Commits are so Important][why-verified-is-important]
 
+**Notes:**
+- I had issues having keys in my keychain (so I didn't have to enter my password every time). I chose to just download and use [GPG Suite][gpg-suite] and that seemed to work well. 
+
 **Generating Keys**
 
 Generate signing keys using [GPG Keychain][gh-gpg] and a password manager to generate a strong passphrase.
@@ -49,3 +52,4 @@ When a GPG key is created, an expiration date is set automatically. If you are s
 [github-expired-gpg]: https://docs.github.com/en/github/authenticating-to-github/updating-an-expired-gpg-key
 [sb_post]:https://github.com/sparkbox/standard/blob/1ca790bf2e5d553264b5d746ab3a9c91a6ffb766/security/security_policy_compliance/verified-commits.md
 [gh-gpg]:https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key
+[gpg-suite]:https://gpgtools.org/
