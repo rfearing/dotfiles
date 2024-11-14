@@ -3,6 +3,8 @@ I followed [The fastest and easiest way to install Ruby on a Mac in 2022](https:
 
 *June, 23rd 2022*
 
+*Update: Nov 2024: Commenting out aliases as I haven't used ruby locally in a long while.*
+
 ### How to [install different version of Ruby](https://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/#how-to-install-different-versions-of-ruby-and-switch-between-them) and switch between them.
 
 #### Install:
