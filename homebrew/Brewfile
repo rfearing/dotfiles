@@ -45,6 +45,7 @@ brew "watchman"
 brew "yarn"
 brew "youtube-dl"
 brew "zsh"
+brew "1password-cli"
 # End Brews
 
 # Casks
@@ -59,7 +60,7 @@ cask "docker"
 cask "expressions"
 cask "font-hack"
 cask "freedom"
-cask "gimp"
+# cask "gimp" # Removed for "Vulnerable software detected" (Can probably re-install later)
 cask "google-drive"
 cask "gpg-suite-pinentry"
 cask "imageoptim"
@@ -80,9 +81,11 @@ cask "steam"
 cask "textsniper"
 cask "todoist"
 cask "vanilla"
-cask "virtualbox"
+# cask "virtualbox"
 cask "visual-studio-code"
 cask "vlc"
+cask "discord"
+cask "netnewswire"
 # End Casks
 
 #####
