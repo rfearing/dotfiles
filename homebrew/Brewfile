@@ -46,6 +46,7 @@ brew "yarn"
 brew "youtube-dl"
 brew "zsh"
 brew "1password-cli"
+brew "copilot-cli"
 # End Brews
 
 # Casks
