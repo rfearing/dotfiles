@@ -47,6 +47,7 @@ brew "youtube-dl"
 brew "zsh"
 brew "1password-cli"
 brew "copilot-cli"
+brew "nvm"
 # End Brews
 
 # Casks
@@ -79,14 +80,8 @@ cask "setapp"
 cask "signal"
 cask "spotify"
 cask "steam"
-cask "textsniper"
-cask "todoist"
-cask "vanilla"
-# cask "virtualbox"
 cask "visual-studio-code"
-cask "vlc"
 cask "discord"
-cask "netnewswire"
 # End Casks
 
 #####
