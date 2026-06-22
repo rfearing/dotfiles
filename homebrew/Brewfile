@@ -1,74 +1,50 @@
 cask_args appdir: '/Applications'
 
 # Taps
-tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/services"
-tap "dart-lang/dart"
-tap "github/bootstrap"
-tap "oven-sh/bun"
 tap "sass/sass"
 tap "teamookla/speedtest"
-tap "thoughtbot/formulae"
 # End Taps
 
 # Brews
-brew "act"
-brew "chruby"
-brew "composer"
-brew "deno"
+brew "copilot-cli"
 brew "docker-compose"
 brew "fzf"
 brew "gcc"
 brew "gh"
 brew "git-lfs"
 brew "git-secrets"
-brew "git"
 brew "gnupg"
-brew "go"
 brew "hey" # tiny program to send some load to a web app
 brew "httpd"
-brew "hub"
 brew "imagemagick"
 brew "mkcert"
-brew "mpv"
-brew "mysql-client"
-brew "node"
+brew "nvm"
 brew "openssl"
-brew "php", restart_service: true
 brew "ruby-install"
 brew "sass/sass/sass"
 brew "shellcheck"
-brew "tmux"
 brew "vim"
-brew "watchman"
-brew "yarn"
-brew "youtube-dl"
 brew "zsh"
-brew "1password-cli"
-brew "copilot-cli"
-brew "nvm"
 # End Brews
 
 # Casks
 # Tools that you can download via Homebrew but Homebrew doesn’t support them officially
-cask "1password/tap/1password-cli"
 cask "alfred"
 cask "anki"
 cask "balenaetcher"
 cask "calibre"
 cask "colour-contrast-analyser"
+cask "discord"
 cask "docker"
-cask "expressions"
 cask "font-hack"
 cask "freedom"
-# cask "gimp" # Removed for "Vulnerable software detected" (Can probably re-install later)
 cask "google-drive"
 cask "gpg-suite-pinentry"
 cask "imageoptim"
 cask "iterm2"
 cask "karabiner-elements"
-cask "kdenlive"
 cask "keycastr"
 cask "keysmith"
 cask "masscode"
@@ -80,18 +56,20 @@ cask "setapp"
 cask "signal"
 cask "spotify"
 cask "steam"
-cask "visual-studio-code"
-cask "discord"
 # End Casks
 
 #####
 
 ## Apps that come pre-installed on GitHub devices (or via self-serve):
+# brew "git"
+# brew "go"
 # cask "1password
+# cask "1password/tap/1password-cli"
 # cask "firefox
 # cask "google-chrome
 # cask "microsoft-teams
 # cask "slack
+# cask "visual-studio-code"
 # cask "zoom"
 
 ## no longer supported at GH:
@@ -99,16 +77,31 @@ cask "discord"
 # cask "postman"
 
 ## Apps that I no longer use, but maybe will revisit in the future:
+# brew "1password-cli"
+# brew "act"
+# brew "chruby"
 # brew "circleci"
+# brew "composer"
+# brew "deno"
 # brew "gmailctl"
-# brew "switchaudio-osx"
-# cask "brave-browser"
-# cask "browserosaurus"
-# cask "dropbox-capture"
+# brew "mysql-client"
+# brew "php", restart_service: true
 # brew "postgresql"
+# brew "switchaudio-osx"
+# brew "tmux"
+# brew "watchman"
+# brew "yarn"
+# brew "youtube-dl"
+# cask "dropbox-capture"
+# cask "expressions"
+# cask "kdenlive"
 # cask "switchhosts"
 # cask "vivaldi"
 # cask "xbar"
+# tap "dart-lang/dart"
+# tap "heroku/brew"
+# tap "oven-sh/bun"
+# tap "thoughtbot/formulae"
 
 ## Other:
 # brew "nvm" => install using zsh-nvm plugin
