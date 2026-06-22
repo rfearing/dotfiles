@@ -15,7 +15,7 @@ defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1
 defaults write com.apple.Finder FXPreferredViewStyle Nlsv
 
 # Show the ~/Library folder.
-chflags nohidden ~/Library
+# chflags nohidden ~/Library
 
 # Show dotfiles
 defaults write com.apple.Finder AppleShowAllFiles true
