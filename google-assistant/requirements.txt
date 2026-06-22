@@ -1,8 +1,0 @@
-google-assistant-grpc
-google-assistant-sdk
-google-assistant-sdk[samples]
-google-auth-oauthlib
-click
-requests
-urllib3
-protobuf==3.20.*
