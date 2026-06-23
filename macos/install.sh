@@ -12,4 +12,4 @@ echo "› sudo softwareupdate -i -a"
 sudo softwareupdate -i -a
 
 # Application Settings
-ln -s ~/.dotfiles/macos/karabiner ~/.config
+ln -s ~/.dotfiles/macos ~/.config
