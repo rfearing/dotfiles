@@ -19,7 +19,7 @@ brew "mkcert"
 brew "node"
 brew "nvm"
 brew "openssl"
-brew "pinentry-mac"
+brew "pinentry-mac" # required for gpg to save passphrase in keychain
 brew "ruby-install"
 brew "shellcheck"
 brew "vim"
